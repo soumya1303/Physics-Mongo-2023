@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+
+<h2><%=intro.epsumCode%></h2>
+<p><%=intro.epsumText%></p§>
+
+<% posts.forEach((elm)=>{%>
+    <h3><%=elm.posttitle%></h3>
+    <p><%=elm.postbody%> ... <a href="/posts/<%=elm.posttitle%>">more</a> </p>
+<%})%>
+
+<%- include("partials/footer"); -%>
